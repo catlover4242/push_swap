@@ -34,11 +34,13 @@ typedef struct s_mq
 
 // src
 size_t	ft_strlen(const char *s);
+void	quick_sort(int *array, int low, int high);
 
 // utils
 void free_pile(t_pile **pile);
 void free_all(t_pile **pile_a, t_pile **pile_b, t_pile **mq);
 int	new_element(int nbr, t_pile **element);
+int	len(t_pile *pile);
 
 // push
 void push_b(t_pile **pilea, t_pile **pileb, t_mq **mq);

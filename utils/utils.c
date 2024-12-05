@@ -74,3 +74,22 @@ int addlist(t_pile **pile, int nbr)
 	}
 	return (1);
 }
+
+int	len(t_pile *pile)
+{
+	t_pile *temp;
+	int		i;
+
+	if ((pile) && pile->next != pile)
+	{
+		temp = (pile)->next;
+		i = 1;
+		while (temp != (pile))
+		{
+			i++;
+			temp = temp->next;
+		}
+		return (i);
+	}
+	return (0);
+}
