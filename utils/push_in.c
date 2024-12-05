@@ -16,7 +16,7 @@ void push_a(t_pile **pilea, t_pile **pileb, t_mq **mq)
 {
 	t_pile	*tmp;
 
-	if (addtolist(pilea, (*pileb)->value) == -1)
+	if (addlist(pilea, (*pileb)->value) == -1)
 	{
 		free_all(pilea, pileb, mq);
 		exit(1);
@@ -33,7 +33,7 @@ void push_b(t_pile **pilea, t_pile **pileb, t_mq **mq)
 {
 	t_pile	*tmp;
 
-	if (addtolist(pileb, (*pilea)->value) == -1)
+	if (addlist(pileb, (*pilea)->value) == -1)
 	{
 		free_all(pilea, pileb, mq);
 		exit(1);
