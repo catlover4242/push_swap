@@ -41,18 +41,18 @@ char	*ft_strdup(const char *src);
 int	ft_atoi_and_check(const char *nptr, int *error);
 
 // utils
-void free_pile(t_pile **pile);
-void free_all(t_pile **pile_a, t_pile **pile_b, t_pile **mq);
+void	free_pile(t_pile **pile);
+void	free_all(t_pile **pile_a, t_pile **pile_b, t_pile **mq);
 int	new_element(int nbr, t_pile **element);
 int	len(t_pile *pile);
 
 // push
-void push_b(t_pile **pilea, t_pile **pileb, t_mq **mq);
-void push_b(t_pile **pilea, t_pile **pileb, t_mq **mq);
+void	push_b(t_pile **pilea, t_pile **pileb, t_mq **mq);
+void	push_b(t_pile **pilea, t_pile **pileb, t_mq **mq);
 
 // swap
-void swap_a(t_pile **pilea);
-void swap_b(t_pile **pileb);
+void	swap_a(t_pile **pilea);
+void	swap_b(t_pile **pileb);
 
 // rotate
 void	rotate_a(t_pile **pile_a, int print);
@@ -68,5 +68,8 @@ void	inverse_rotate_all(t_pile **pilea, t_pile **pileb);
 int	get_index(t_pile *pile, int elem);
 int get_min(t_pile *pile);
 int get_max(t_pile *pile);
+
+// algo
+void	sort_three(t_pile **pile_a);
 
 #endif
