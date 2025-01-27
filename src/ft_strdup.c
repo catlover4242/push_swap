@@ -1,29 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pleblond <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/18 13:59:13 by pleblond          #+#    #+#             */
-/*   Updated: 2024/11/18 13:59:13 by pleblond         ###   ########.fr       */
+/*   Created: 2025/01/27 02:10:10 by pleblond          #+#    #+#             */
+/*   Updated: 2025/01/27 02:10:10 by pleblond         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
 
-int	main(int argc, char **argv)
+char	*ft_strdup(const char *src)
 {
-	t_mq *mq;
-	int		error;
-	t_pile *pile_a;
-	t_pile	*pile_b;
+	char	*new;
+	int		i;
 
-	if (argc == 1)
-		exit(1);
-	mq = malloc(sizeof(t_mq));
-	if (!mq)
-		return (1);
-	error = 0;
-	
+	i = 0;
+	while (src[i])
+		i++;
+	new = malloc(sizeof(char) * (i + 1));
+	if (!new)
+		return (NULL);
+	i = -1;
+	while (src[++i])
+		new[i] = src[i];
+	new[i] = '\0';
+	return (new);
 }
+
+// int main(void)
+// {
+	// printf("%s\n", ft_strdup("une chaine de characteres."));
+	// return 0;
+// }

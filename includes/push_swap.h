@@ -35,6 +35,10 @@ typedef struct s_mq
 // src
 size_t	ft_strlen(const char *s);
 void	quick_sort(int *array, int low, int high);
+long long	ft_atoi(const char *nptr);
+char	**ft_split(char const *s, char c);
+char	*ft_strdup(const char *src);
+int	ft_atoi_and_check(const char *nptr, int *error);
 
 // utils
 void free_pile(t_pile **pile);

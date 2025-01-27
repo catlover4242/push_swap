@@ -2,6 +2,9 @@ name = push_swap
 
 SRCS = src/push_swap.c \
 		src/ft_strlen.c \
+		src/ft_atoi.c \
+		src/ft_split.c \
+		src/ft_strdup.c \
 		utils/get_instructions.c \
 		utils/push_in.c \
 		utils/rotate_in.c \
