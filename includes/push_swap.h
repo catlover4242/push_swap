@@ -68,8 +68,12 @@ void	inverse_rotate_all(t_pile **pilea, t_pile **pileb);
 int	get_index(t_pile *pile, int elem);
 int get_min(t_pile *pile);
 int get_max(t_pile *pile);
+int	get_pos_to_place(t_pile *pile, int elem);
+int	get_best_move(t_pile *pile_a, t_pile *pile_b);
 
 // algo
 void	sort_three(t_pile **pile_a);
+int	is_sorted(t_pile *pile);
+int	inner(t_pile *pile, int q1, int q2);
 
 #endif

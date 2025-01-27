@@ -5,6 +5,7 @@ SRCS = src/push_swap.c \
 		src/ft_atoi.c \
 		src/ft_split.c \
 		src/ft_strdup.c \
+		src/medianne.c \
 		utils/get_instructions.c \
 		utils/push_in.c \
 		utils/rotate_in.c \
@@ -13,6 +14,7 @@ SRCS = src/push_swap.c \
 		utils/reverse_rotate.c \
 		algo/algo_utils.c \
 		algo/small_sort.c \
+		algo/algo_large.c \
 
 INCLUDES = includes/push_swap.h
 
