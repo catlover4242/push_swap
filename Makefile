@@ -11,6 +11,8 @@ SRCS = src/push_swap.c \
 		utils/swap_in.c \
 		utils/utils_in.c \
 		utils/reverse_rotate.c \
+		algo/algo_utils.c \
+		algo/small_sort.c \
 
 INCLUDES = includes/push_swap.h
 

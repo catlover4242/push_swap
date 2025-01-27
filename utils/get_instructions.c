@@ -60,3 +60,25 @@ int get_max(t_pile *pile)
 	}
 	return (max);
 }
+
+int	get_pos_to_place(t_pile *pile, int elem)
+{
+	int	min;
+	int	i;
+	int	lenght;
+	t_pile *tmp;
+
+	min = get_min(pile);
+	if (elem > get_max(pile) || elem < min)
+		return (get_index(pile, min));
+	lenght = len(pile);
+	i = -1;
+	tmp = pile;
+	while (i++ < 1)
+	{
+		if (tmp->prev->value < elem && elem < tmp->value)
+			return (i);
+		tmp = tmp->next;
+	}
+	return (0);
+}
