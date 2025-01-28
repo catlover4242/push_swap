@@ -23,7 +23,7 @@ int	get_index(t_pile *pile, int elem)
 	{
 		if (temp->value == elem)
 			return (i);
-			temp = temp->next;
+		temp = temp->next;
 			i++;
 	}
 	return (i);
@@ -74,7 +74,7 @@ int	get_pos_to_place(t_pile *pile, int elem)
 	lenght = len(pile);
 	i = -1;
 	tmp = pile;
-	while (i++ < 1)
+	while (i++ < lenght)
 	{
 		if (tmp->prev->value < elem && elem < tmp->value)
 			return (i);

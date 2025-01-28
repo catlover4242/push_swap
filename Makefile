@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: pleblond <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/01/28 23:38:28 by pleblond          #+#    #+#              #
+#    Updated: 2025/01/28 23:38:28 by pleblond         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 name = push_swap
 
 SRCS = src/push_swap.c \
@@ -6,12 +18,13 @@ SRCS = src/push_swap.c \
 		src/ft_split.c \
 		src/ft_strdup.c \
 		src/medianne.c \
+		src/quick_sort.c \
 		utils/get_instructions.c \
 		utils/push_in.c \
 		utils/rotate_in.c \
 		utils/swap_in.c \
-		utils/utils_in.c \
-		utils/reverse_rotate.c \
+		utils/utils.c \
+		utils/reverse_rotate_in.c \
 		algo/algo_utils.c \
 		algo/small_sort.c \
 		algo/algo_large.c \

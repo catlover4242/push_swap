@@ -33,7 +33,7 @@ void free_pile(t_pile **pile)
 }
 
 // Fonction qui free les 2 piles.
-void free_all(t_pile **pile_a, t_pile **pile_b, t_pile **mq)
+void free_all(t_pile **pile_a, t_pile **pile_b, t_mq **mq)
 {
 	free_pile(pile_a);
 	free_pile(pile_b);

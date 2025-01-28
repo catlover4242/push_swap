@@ -40,16 +40,18 @@ char		**ft_split(char const *s, char c);
 char		*ft_strdup(const char *src);
 int			ft_atoi_and_check(const char *nptr, int *error);
 void		fill_mq(t_mq **mq, int len, int array[]);
+void		get_median_quartil(char **spl, t_mq **mq, int *error);
 
 // utils
 void		free_pile(t_pile **pile);
-void		free_all(t_pile **pile_a, t_pile **pile_b, t_pile **mq);
+void		free_all(t_pile **pile_a, t_pile **pile_b, t_mq **mq);
 int			new_element(int nbr, t_pile **element);
 int			len(t_pile *pile);
+int 		addlist(t_pile **pile, int nbr);
 
 // push
 void		push_b(t_pile **pilea, t_pile **pileb, t_mq **mq);
-void		push_b(t_pile **pilea, t_pile **pileb, t_mq **mq);
+void		push_a(t_pile **pilea, t_pile **pileb, t_mq **mq);
 
 // swap
 void		swap_a(t_pile **pilea);
@@ -63,7 +65,7 @@ void		rotate_all(t_pile **pilea, t_pile **pileb);
 // reverse_rotate
 void		reverse_rotate_a(t_pile **pile_a, int print);
 void		reverse_rotate_b(t_pile **pile_b, int print);
-void		inverse_rotate_all(t_pile **pilea, t_pile **pileb);
+void		reverse_rotate_all(t_pile **pilea, t_pile **pileb);
 
 // get things
 int			get_index(t_pile *pile, int elem);
@@ -76,5 +78,9 @@ int			get_best_move(t_pile *pile_a, t_pile *pile_b);
 void		sort_three(t_pile **pile_a);
 int			is_sorted(t_pile *pile);
 int			inner(t_pile *pile, int q1, int q2);
+void		insertion_sort(t_pile **p_a, t_pile **p_b, int b_move, t_mq **mq);
+void		push_a_optimize(t_pile *pile_a, t_pile *pile_b, t_mq *mq);
+void		push_b_optimize(t_pile *pile_a, t_pile *pile_b, t_mq *mq);
+void 		replace_pile(t_pile **pile);
 
 #endif

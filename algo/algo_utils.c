@@ -99,7 +99,7 @@ void replace_pile(t_pile **pile)
 	int	index;
 	t_pile *pile_a;
 
-	pile_a = pile;
+	pile_a = *pile;
 	m = get_min(pile_a);
 	if (pile_a->value != m)
 	{

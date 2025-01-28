@@ -34,7 +34,7 @@ void	rotate_b(t_pile **pile_b, int print)
 
 void	rotate_all(t_pile **pilea, t_pile **pileb)
 {
-	if (*pilea && (*pilea)->next != *pilea && *pileb && (*pileb)->next != pileb)
+	if (*pilea && (*pilea)->next != *pilea && *pileb && (*pileb)->next != *pileb)
 	{
 		rotate_a(pilea, 0);
 		rotate_b(pileb, 0);

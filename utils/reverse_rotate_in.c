@@ -32,9 +32,9 @@ void	reverse_rotate_b(t_pile **pile_b, int print)
 	}
 }
 
-void	inverse_rotate_all(t_pile **pilea, t_pile **pileb)
+void	reverse_rotate_all(t_pile **pilea, t_pile **pileb)
 {
-	if (*pilea && (*pilea)->prev != *pilea && *pileb && (*pileb)->prev != pileb)
+	if (*pilea && (*pilea)->prev != *pilea && *pileb && (*pileb)->prev != *pileb)
 	{
 		reverse_rotate_a(pilea, 0);
 		reverse_rotate_b(pileb, 0);
